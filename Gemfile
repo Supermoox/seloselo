@@ -42,10 +42,13 @@ group :development, :test do
   gem 'selenium-webdriver'
 end
 
+#my added gems
 gem 'devise', git: 'https://github.com/gogovan/devise.git', branch: 'rails-5.1'
 gem 'erubis'
 gem 'paperclip', '~> 5.1'
-
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem 'jquery-rails'
+gem 'sprockets', '~> 3.7', '>= 3.7.1'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
