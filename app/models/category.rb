@@ -1,3 +1,3 @@
 class Category < ApplicationRecord
-	has_many :producs
+	has_many :products, inverse_of: :category
 end
