@@ -83,11 +83,18 @@
 
                <div class="row">
 
+                  <% if !user_signed_in? %>
+                    <div class="jumbotron">
+                      <h3  style="color:#2E8B57;">Hurry! !hurry while stock last</h3>
+                      <p style="color:#FFA500;"> To start shopping <%= link_to "sign up",new_user_registration_path %> </p>
+                     
+                    </div>
+                  <% end %>
 
                <% @products.each do |product| %>
                    <div class="col-sm-6 col-md-3">
                       <div class="thumbnail">
-                          <%= link_to (image_tag product.image.url(:medium), class: 'image'), product %>
+                          <%= link_to (image_tag product.image, class: 'image'), product %>
                           
                           <div class = "caption">
                              <p>
